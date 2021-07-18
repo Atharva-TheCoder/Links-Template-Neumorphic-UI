@@ -1,0 +1,208 @@
+:root {
+   --font-color: #ffffff90;
+   --bg-color: #1a1a1a;
+   --shadow1: #000000;
+   --shadow2: #3a3a3a;
+}
+
+body {
+   background-color: var(--bg-color);
+   font-family: Delius;
+   text-align: center;
+   color: var(--font-color);
+}
+
+::selection {
+   background-color: #282828;
+   color: #fff;
+}
+
+.main {
+   width: 60%;
+   height: auto;
+   background-color: var(--bg-color);
+   padding: 20px;
+   margin: auto;
+   border-radius: 20px;
+   box-shadow: 7px 7px 16px var(--shadow1), -7px -7px 16px var(--shadow2);
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.userinfo {
+   width: 70%;
+   height: auto;
+   background-color: var(--bg-color);
+   padding: 20px;
+   margin: auto;
+   border-radius: 20px;
+   box-shadow: 4px 4px 10px var(--shadow1), -4px -4px 10px var(--shadow2);
+   margin-top: 20px;
+}
+
+.userinfo h2 {
+   text-align: center;
+   color: var(--font-color);
+   font-size: 20px;
+}
+
+.userinfo p {
+   color: var(--font-color);
+   font-size: 15px;
+}
+
+.avatar-circle {
+   width: 125px;
+   height: 125px;
+   border-radius: 50%;
+   margin: auto;
+   box-shadow: inset 2px 2px 5px var(--shadow1), inset -2px -2px 5px var(--shadow2);
+}
+
+.avatar {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   box-shadow: 2px 2px 5px var(--shadow1), -2px -2px 5px var(--shadow2);
+   display: block;
+   margin: 13px;
+   z-index: 1;
+   position: absolute;
+}
+
+.avatar img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   display: block;
+   margin: auto;
+   opacity: 0.8
+}
+
+.led-card {
+   width: 100%;
+   margin-top: 10px;
+   justify-content: center;
+   display: flex;
+}
+
+.led-border {
+
+}
+
+.led {
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   display: inline-block;
+   margin-left: 2px;
+   margin-right: 2px;
+   background: linear-gradient(to right bottom, lime 0%, #0c800c 100%);
+   /*box-shadow: 1px 1px 2px #000, -1px -1px 2px #3a3a3a;*/
+}
+
+.social-icon-card {
+   padding: 15px;
+   text-align: center;
+}
+
+.social-icons {
+   color: var(--font-color);
+   background: linear-gradient(to right bottom, #262626 0%, #131313 100%);
+   font-size: 22px;
+   padding: 5px;
+   box-shadow: 1px 1px 3px var(--shadow1), -1px -1px 3px var(--shadow2);
+   border-radius: 50%;
+   margin-right: 12px;
+   margin-left: 12px;
+}
+
+.social-icons:hover {
+   box-shadow: 2px 2px 5px var(--shadow1), -2px -2px 5px var(--shadow2);
+   color: #fff;
+}
+
+.social-icons:active {
+   background: linear-gradient(to right bottom, #131313 0%, #262626 100%);
+   box-shadow: inset 3px 3px 7px var(--shadow1), inset -3px -3px 7px var(--shadow1);
+   color: #fff;
+}
+
+.linksection {
+   width: 80%;
+   padding: 15px;
+   margin: auto;
+   margin-top: 30px;
+}
+
+.linkbox {
+   padding: 20px;
+   background: linear-gradient(to right bottom, #262626 0%, #131313 100%);
+   border-radius: 50px;
+   color: var(--font-color);
+   text-decoration: none;
+   display: block;
+   margin-top: 25px;
+   text-align: center;
+   box-shadow: 3px 3px 7px var(--shadow1), -3px -3px 7px var(--shadow2);   
+}
+
+.linkicon {
+   font-size: 26px;
+   color: var(--font-color);
+   float: left;
+   margin-top: -3px;
+   padding-left: 25px;
+   position: absolute;
+   left: 27%;
+}
+
+.linkbox:hover {
+   box-shadow: 5px 5px 10px var(--shadow1), -5px -5px 10px var(--shadow2); 
+   color: #fff;   
+}
+
+.linkbox:hover .linkicon {
+   color: #fff;
+}
+
+.linkbox:active {
+   background: linear-gradient(to right bottom, #131313 0%, #262626 100%);
+   box-shadow: inset 3px 3px 7px var(--shadow1), inset -3px -3px 7px var(--shadow1); 
+   color: #fff;
+}
+
+.linkbox:active .linkicon {
+   color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+   .main {
+      width: 83%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 5px 5px 10px var(--shadow1), -5px -5px 10px var(--shadow2);
+   }
+   
+   .userinfo {
+      width: 75%;
+   }
+
+   .userinfo p {
+      font-size: 14px;
+   }
+   
+   .linksection {
+      width: 85%;
+   }
+   
+   .linkbox {
+      padding: 15px;
+   }
+   
+   .linkicon {
+      font-size: 22px;
+      left: 15%;
+      margin-top: 0px;
+   }
+}
