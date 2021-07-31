@@ -1,8 +1,8 @@
 :root {
-   --font-color: #ffffff60;
-   --bg-color: #0A0A0A; 
+   --font-color: #ffffff90;
+   --bg-color: #2b2e33; 
    --shadow1: #000000; 
-   --shadow2: #151515;
+   --shadow2: #565c66;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 ::selection {
-   background-color: #282828;
+   background-color: #4a4949;
    color: #fff;
 }
 
@@ -26,7 +26,7 @@ body {
    padding: 20px;
    margin: auto;
    border-radius: 20px;
-   box-shadow: 5px 5px 7px var(--shadow1), -5px -5px 7px var(--shadow2);
+   box-shadow: 3px 3px 7px var(--shadow1), -3px -3px 7px var(--shadow2);
    margin-top: 50px;
    margin-bottom: 50px;
 }
@@ -38,7 +38,7 @@ body {
    padding: 20px;
    margin: auto;
    border-radius: 20px;
-   box-shadow: 4px 4px 10px var(--shadow1), -4px -4px 10px var(--shadow2);
+   box-shadow: inset 2px 2px 5px var(--shadow2), inset -2px -2px 5px var(--shadow1);
    margin-top: 20px;
 }
 
@@ -58,14 +58,16 @@ body {
    height: 125px;
    border-radius: 50%;
    margin: auto;
-   box-shadow: inset 2px 2px 5px var(--shadow1), inset -2px -2px 5px var(--shadow2);
+   box-shadow: inset 2px 2px 7px #000000ab, inset -2px -2px 7px #ffffff26;
+   margin-top: 3px;
+   margin-bottom: 20px;
 }
 
 .avatar {
    width: 100px;
    height: 100px;
    border-radius: 50%;
-   box-shadow: 2px 2px 5px var(--shadow1), -2px -2px 5px var(--shadow2);
+   box-shadow: inset 2px 2px 7px var(--shadow2), inset -2px -2px 7px var(--shadow1);
    display: block;
    margin: 13px;
    z-index: 1;
@@ -95,7 +97,7 @@ body {
    display: inline-block;
    margin-left: 5px;
    margin-right: 5px;
-   background: linear-gradient(to right bottom, lime 0%, #0c800c 100%);
+   background: linear-gradient(to right bottom, lime 0%, #04b704 100%);
    /*box-shadow: 1px 1px 2px #000, -1px -1px 2px #3a3a3a;*/
 }
 
@@ -109,19 +111,18 @@ body {
    background-color: var(--bg-color);
    font-size: 22px;
    padding: 5px;
-   box-shadow: 1px 1px 3px var(--shadow1), -1px -1px 3px var(--shadow2);
+   box-shadow: inset 1px 1px 3px var(--shadow2), inset -1px -1px 3px var(--shadow1);
    border-radius: 50%;
    margin-right: 12px;
    margin-left: 12px;
 }
 
 .social-icons:hover {
-   box-shadow: 2px 2px 5px var(--shadow1), -2px -2px 5px var(--shadow2);
    color: #fff;
 }
 
 .social-icons:active {
-   box-shadow: inset 3px 3px 7px var(--shadow1), inset -3px -3px 7px var(--shadow1);
+   box-shadow: inset 1px 1px 3px var(--shadow1), inset -1px -1px 3px var(--shadow2);
    color: #fff;
 }
 
@@ -141,7 +142,7 @@ body {
    display: block;
    margin-top: 25px;
    text-align: center;
-   box-shadow: 2px 2px 5px var(--shadow1), -2px -2px 5px var(--shadow2);   
+   box-shadow: inset 2px 2px 5px var(--shadow2), inset -2px -2px 5px var(--shadow1);   
 }
 
 .linkicon {
@@ -163,7 +164,7 @@ body {
 }
 
 .linkbox:active {
-   box-shadow: inset 3px 3px 7px var(--shadow1), inset -3px -3px 7px var(--shadow1); 
+   box-shadow: 1px 1px 3px var(--shadow1), -1px -1px 3px var(--shadow2),inset 2px 2px 5px var(--shadow1), inset -2px -2px 5px var(--shadow2); 
    color: #fff;
 }
 
