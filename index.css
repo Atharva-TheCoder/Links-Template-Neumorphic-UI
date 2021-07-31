@@ -1,0 +1,10 @@
+body {
+  font-family: Delius;
+  color: #333333;
+}
+
+a {
+   text-decoration: none;
+   color: #333333;
+   margin: 10px;
+}
